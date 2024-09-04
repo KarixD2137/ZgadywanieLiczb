@@ -19,7 +19,7 @@ public class Main {
         // Typ prosty - tylko wartość, pisany z małej litery
         // Typ złożony - objekt zawierający własności i metody, pisany z dużej litery
 
-        double wylosowanaLiczba = Math.random()*10+1;
+        int wylosowanaLiczba = (int)(Math.random()*10+1); //rzutowanie
         System.out.println(wylosowanaLiczba);
     }
 }
