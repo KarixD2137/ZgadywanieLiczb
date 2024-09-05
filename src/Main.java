@@ -32,5 +32,13 @@ public class Main {
         System.out.println("Zgadnij liczbę");
         Scanner klawiatura = new Scanner(System.in);
         int wpisanaLiczba = klawiatura.nextInt();
+
+        if(wpisanaLiczba == wylosowanaLiczba){
+            System.out.println("Wygrałeś");
+        }
+        else{
+            System.out.println("Nie udało ci się");
+        }
+
     }
 }
