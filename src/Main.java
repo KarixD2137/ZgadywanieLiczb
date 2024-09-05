@@ -79,10 +79,11 @@ public class Main {
             }
         }
         // Zgadujemy do skutku
-        System.out.println("Podaj liczbę");
-        wpisanaLiczba = klawiatura.nextInt();
-        while (wylosowanaLiczba != wpisanaLiczba)
+
+        do
         {
+            System.out.println("Podaj liczbę");
+            wpisanaLiczba = klawiatura.nextInt();
             if (wylosowanaLiczba>wpisanaLiczba)
             {
                 System.out.println("Poszukiwana liczba jest większa");
@@ -91,14 +92,8 @@ public class Main {
             {
                 System.out.println("Poszukiwana liczba jest mniejsza");
             }
-            else
-            {
-                System.out.println("Gratulacje, udało ci się zgadnąć liczbę!");
-                break;
-            }
-            System.out.println("Podaj liczbę");
-            wpisanaLiczba = klawiatura.nextInt();
-
         }
+        while (wylosowanaLiczba != wpisanaLiczba);
+        System.out.println("Gratulacje, udało ci się zgadnąć liczbę!");
     }
 }
