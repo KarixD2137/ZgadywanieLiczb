@@ -69,5 +69,14 @@ public class Main {
             case 2 -> "niedaleko";
             default -> "słabo";
         });
+        // Zgadujemy 10 razy
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Podaj liczbę");
+            wpisanaLiczba = klawiatura.nextInt();
+            if(wpisanaLiczba == wylosowanaLiczba){
+                System.out.println("Gratulacje, udało ci się zgadnąć!");
+                break;
+            }
+        }
     }
 }
