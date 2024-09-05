@@ -9,6 +9,8 @@ git remote add origin https://github.com/KarixD2137/ZgadywanieLiczb.git
 git push -u origin master
 */
 
+import java.util.Scanner;
+
 public class Main {
     // Nazwa pliku i nazwa klasy muszą być takie same
     // Nazwa klas powinny być z wielkiej litery
@@ -17,9 +19,18 @@ public class Main {
         System.out.println("Witam serdecznie!");
 
         // Typ prosty - tylko wartość, pisany z małej litery
+        // boolean
+        // byte, short, int, long
+        // float, double
+        // char
         // Typ złożony - objekt zawierający własności i metody, pisany z dużej litery
 
         int wylosowanaLiczba = (int)(Math.random()*10+1); //rzutowanie
+
         System.out.println(wylosowanaLiczba);
+
+        System.out.println("Zgadnij liczbę");
+        Scanner klawiatura = new Scanner(System.in);
+        int wpisanaLiczba = klawiatura.nextInt();
     }
 }
