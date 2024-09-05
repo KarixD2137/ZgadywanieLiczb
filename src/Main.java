@@ -25,7 +25,7 @@ public class Main {
         // char
         // Typ złożony - objekt zawierający własności i metody, pisany z dużej litery
 
-        int wylosowanaLiczba = (int)(Math.random()*10+1); //rzutowanie
+        int wylosowanaLiczba = (int)(Math.random()*100+1); //rzutowanie
 
         System.out.println(wylosowanaLiczba);
 
@@ -39,6 +39,9 @@ public class Main {
         else{
             System.out.println("Nie udało ci się");
         }
-
+        // Wyrażenie warunkowa (taka jakby skrócona instrukcja warunkowa, która tworzy  )
+        // warunek? jeżeli tak : jeżeli nie
+        int roznica = wylosowanaLiczba>wpisanaLiczba? wylosowanaLiczba-wpisanaLiczba : wpisanaLiczba-wylosowanaLiczba;
+        roznica = roznica/10; // dzielenie całkowite
     }
 }
