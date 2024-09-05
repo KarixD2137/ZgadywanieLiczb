@@ -41,7 +41,33 @@ public class Main {
         }
         // Wyrażenie warunkowa (taka jakby skrócona instrukcja warunkowa, która tworzy  )
         // warunek? jeżeli tak : jeżeli nie
+        // Instrukcja - nie zwraca wartości
+        // Wyrażenie - zwraca wartość
         int roznica = wylosowanaLiczba>wpisanaLiczba? wylosowanaLiczba-wpisanaLiczba : wpisanaLiczba-wylosowanaLiczba;
-        roznica = roznica/10; // dzielenie całkowite
+        roznica = roznica/10; // dzielenie
+        switch (roznica)
+        {
+            case 0:
+                System.out.println("Dobra robota!");
+                break;
+            case 1:
+                System.out.println("Bardzo blisko!");
+                break;
+            case 2:
+                System.out.println("Blisko");
+                break;
+            case 3:
+                System.out.println("Niedaleko");
+                break;
+            default:
+                System.out.println("Słabo");
+                break;
+        }
+        System.out.println(switch (roznica){
+            case 0 -> "Bardzo blisko";
+            case 1 -> "Blisko";
+            case 2 -> "niedaleko";
+            default -> "słabo";
+        });
     }
 }
