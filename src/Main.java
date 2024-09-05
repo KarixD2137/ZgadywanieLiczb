@@ -74,9 +74,31 @@ public class Main {
             System.out.println("Podaj liczbę");
             wpisanaLiczba = klawiatura.nextInt();
             if(wpisanaLiczba == wylosowanaLiczba){
-                System.out.println("Gratulacje, udało ci się zgadnąć!");
+                System.out.println("Gratulacje, udało ci się zgadnąć liczbę!");
                 break;
             }
+        }
+        // Zgadujemy do skutku
+        System.out.println("Podaj liczbę");
+        wpisanaLiczba = klawiatura.nextInt();
+        while (wylosowanaLiczba != wpisanaLiczba)
+        {
+            if (wylosowanaLiczba>wpisanaLiczba)
+            {
+                System.out.println("Poszukiwana liczba jest większa");
+            }
+            else if (wylosowanaLiczba<wpisanaLiczba)
+            {
+                System.out.println("Poszukiwana liczba jest mniejsza");
+            }
+            else
+            {
+                System.out.println("Gratulacje, udało ci się zgadnąć liczbę!");
+                break;
+            }
+            System.out.println("Podaj liczbę");
+            wpisanaLiczba = klawiatura.nextInt();
+
         }
     }
 }
